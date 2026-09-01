@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Footer.css";
+import "../styles/footer.css";
 
 import {FaLinkedin, FaInstagram, FaFacebookF, FaPinterestP, FaTwitter,} from "react-icons/fa";
 import googleplay from "../assets/images/googleplay.png";  
