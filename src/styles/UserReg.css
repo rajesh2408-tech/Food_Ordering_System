@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+.reg-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Left Image Section */
+.reg-img {
+    height: 93vh;
+    width: 45vw;
+    max-width: 650px;
+    background-image: url("../assets/images/reg-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px 0 0 50px;
+}
+
+/* Right Form Container */
+.reg-form-container {
+    height: 93vh;
+    width: 45vw;
+    max-width: 650px;
+}
+
+/* Registration Form */
+.reg-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgb(253, 245, 239);
+    padding: 40px;
+    border-radius: 0 50px 50px 0;
+}
+
+/* Header */
+.reg-form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.reg-form-header h1 {
+    font-size: 36px;
+    color: #222;
+    font-weight: 700;
+}
+
+.reg-form-header p {
+    font-size: 13px;
+    color: #777;
+    letter-spacing: 1.5px;
+}
+
+/* Main Inputs */
+.reg-form > input {
+    height: 42px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 8px 14px;
+    font-size: 15px;
+    color: #222;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.reg-form > input::placeholder {
+    color: #999;
+}
+
+.reg-form > input:focus {
+    border-color: #fd5555;
+    box-shadow: 0 0 0 2px rgba(253, 85, 85, 0.12);
+}
+
+/* Gender + Country */
+.gender-country {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 5px;
+}
+
+/* Gender Section */
+.gender {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+.gender > label:first-child {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.gender input[type="radio"] {
+    cursor: pointer;
+    accent-color: #fd5555;
+}
+
+/* Country Section */
+.country {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.country label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.country select {
+    flex: 1;
+    height: 38px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    padding: 0 10px;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.country select:focus {
+    border-color: #fd5555;
+    box-shadow: 0 0 0 2px rgba(253, 85, 85, 0.12);
+}
+
+/* Terms and Conditions */
+.terms {
+    width: 100%;
+    max-width: 350px;
+    min-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.terms input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #fd5555;
+}
+
+.terms label {
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Register Button */
+.reg-form > button {
+    height: 42px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+    background-color: #fd5555;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.reg-form > button:hover {
+    transform: translateY(-1px);
+    background-color: #ff3535;
+    box-shadow: 0 5px 15px rgba(253, 85, 85, 0.25);
+}
+
+.reg-form > button:active {
+    transform: scale(0.98);
+}
+
+/* Login Text */
+.reg-form > p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.reg-form > p a {
+    color: #fd5555;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.reg-form > p a:hover {
+    text-decoration: underline;
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 950px) {
+    .reg-container {
+        padding: 30px;
+    }
+    .reg-img {
+        width: 42vw;
+    }
+    .reg-form-container {
+        width: 50vw;
+    }
+    .reg-form {
+        padding: 30px 20px;
+    }
+    .reg-form-header h1 {
+        font-size: 30px;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .reg-container {
+        min-height: 100vh;
+        padding: 20px;
+        flex-direction: column;
+        background-color: rgb(253, 245, 239);
+    }
+    .reg-img {
+        display: none;
+    }
+    .reg-form-container {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+    .reg-form {
+        width: 100%;
+        height: auto;
+        min-height: calc(100vh - 40px);
+        padding: 35px 25px;
+        border-radius: 25px;
+        justify-content: center;
+    }
+    .reg-form-header h1 {
+        font-size: 30px;
+    }
+    .reg-form-header p {
+        font-size: 12px;
+    }
+    .reg-form > input, .reg-form > button, .gender-country, .terms {
+        max-width: 100%;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .reg-container {
+        padding: 10px;
+    }
+    .reg-form {
+        min-height: calc(100vh - 20px);
+        padding: 25px 18px;
+        gap: 13px;
+        border-radius: 20px;
+    }
+    .reg-form-header {
+        margin-bottom: 10px;
+    }
+    .reg-form-header h1 {
+        font-size: 27px;
+    }
+    .reg-form-header p {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .reg-form > input {
+        height: 40px;
+        font-size: 14px;
+    }
+    .gender {
+        gap: 7px;
+        font-size: 13px;
+    }
+    .country {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .country select {
+        width: 100%;
+        flex: unset;
+    }
+    .terms label {
+        font-size: 12px;
+    }
+    .reg-form > button {
+        height: 40px;
+        font-size: 15px;
+    }
+    .reg-form > p {
+        font-size: 13px;
+        text-align: center;
+    }
+}
